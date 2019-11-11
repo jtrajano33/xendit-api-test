@@ -1,0 +1,22 @@
+{
+  "name": "xendit",
+  "version": "1.0.0",
+  "description": "xendit skill test api",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "mocha --recursive --exit --timeout 60000"
+  },
+  "author": "Justin Trajano",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mocha": "^6.2.2",
+    "mongoose": "^5.7.9",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
+  }
+}
