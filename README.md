@@ -9,6 +9,7 @@ live demo : https://xendit-exam.herokuapp.com/orgs/xendit/comments
 3. cd `xendit-api-test`
 4. Install dependencies by typing : `yarn`
 5. Start the app on `http://localhost:5000` by typing: `yarn start`
+6. To run tests, type: `yarn test`
 
 
 # End points
