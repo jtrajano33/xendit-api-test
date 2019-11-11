@@ -1,11 +1,11 @@
 # Xendit Technical Exam
 
-live demo : 
+live demo : https://xendit-exam.herokuapp.com/orgs/xendit/comments
 
 ## Instructions
 
 1. Install yarn globally: `npm install -g yarn`
-2. Clone the repo `git clone `
+2. Clone the repo `git clone https://github.com/jtrajano33/xendit-api-test.git`
 3. cd `xendit-api-test`
 4. Install dependencies by typing : `yarn`
 5. Start the app on `http://localhost:5000` by typing: `yarn start`
@@ -13,31 +13,29 @@ live demo :
 
 # End points
 
-Note: You can test this endpoints on organizations already available or you can add a new comment or member from a different organization by using the end points below.
+Note: You can test this endpoints on the organization already available on the live demo (xendit) or you can add a new comment or member from a different organization by using the end points below.
 
-Available organization to test endpoints:
-1.xendit
 
 ## Add comment
 
 Adds a comment to the specified organization name
 
-- URL:
+- URL: <br>
     /orgs/:organization/comments
 
-- Method:
+- Method: <br>
     POST
 
-- URL Params:
-    Required:
+- URL Params: <br>
+    Required: <br>
         organization = [ string ]
 
-- Payload:
-    Required:
+- Payload: <br>
+    Required:<br>
         comment = [ string ]
 
-- Success Response:
-    Code: 200
+- Success Response:<br>
+    Code: 200<br>
     Content: {
         msg: "Comment Added to xendit",
         comment: {
@@ -53,18 +51,18 @@ Adds a comment to the specified organization name
 
 Get all comments for the specified organization name
 
-- URL:
+- URL:<br>
     /orgs/:organization/comments
 
-- Method:
+- Method:<br>
     GET
 
-- URL Params:
-    Required:
+- URL Params:<br>
+    Required:<br>
         organization = [ string ]
 
-- Success Response:
-    Code: 200
+- Success Response:<br>
+    Code: 200<br>
     Content: {
         comments: [
             {
@@ -81,18 +79,18 @@ Get all comments for the specified organization name
 
 Deletes all comments for the specified organization name
 
-- URL:
+- URL:<br>
     /orgs/:organization/comments
 
-- Method:
+- Method:<br>
     PUT
 
-- URL Params:
-    Required:
+- URL Params:<br>
+    Required:<br>
         organization = [ string ]
 
-- Success Response:
-    Code: 200
+- Success Response:<br>
+    Code: 200<br>
     Content: {
         msg: "Comments deleted",
         comments: {
@@ -106,18 +104,18 @@ Deletes all comments for the specified organization name
 
 Get all deleted comments for the specified organization name
 
-- URL:
+- URL:<br>
     /orgs/:organization/deleted-comments
 
-- Method:
+- Method:<br>
     GET
 
-- URL Params:
-    Required:
+- URL Params:<br>
+    Required:<br>
         organization = [ string ]
 
-- Success Response:
-    Code: 200
+- Success Response:<br>
+    Code: 200<br>
     Content: {
         comments: [
             {
@@ -136,18 +134,18 @@ Get all deleted comments for the specified organization name
 
 Get all members for the specified organization name in descending order according to followers
 
-- URL:
+- URL:<br>
     /orgs/:organization/members
 
-- Method:
+- Method:<br>
     GET
 
-- URL Params:
-    Required:
+- URL Params:<br>
+    Required:<br>
         organization = [ string ]
 
-- Success Response:
-    Code: 200
+- Success Response:<br>
+    Code: 200<br>
     Content: {
         members: [
             {
@@ -175,26 +173,26 @@ Get all members for the specified organization name in descending order accordin
 
 Adds a member to the specified organization name
 
-- URL:
+- URL:<br>
     /orgs/:organization/members
 
-- Method:
+- Method:<br>
     POST
 
-- URL Params:
-    Required:
+- URL Params:<br>
+    Required:<br>
         organization = [ string ]
 
-- Payload:
-    Required:
-        name = [ string ]
-    Optional:
-        followers = [ number ]
-        following = [ number ]
-        avatarUrl = [ string ]
+- Payload:<br>
+    Required:<br>
+        name = [ string ]<br>
+    Optional:<br>
+        followers = [ number ]<br>
+        following = [ number ]<br>
+        avatarUrl = [ string ]<br>
 
-- Success Response:
-    Code: 200
+- Success Response:<br>
+    Code: 200<br>
     Content: {
         msg: "Member Added to xendit",
         member: {
